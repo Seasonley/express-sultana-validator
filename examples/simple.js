@@ -1,16 +1,3 @@
-# express-sultana-validator
-
-express middleware using sultana-validator
-
-# Installation
-
-```
-npm install express-sultana-validator
-```
-
-# How to Use
-
-```js
 const express = require("express");
 const {
     Required,
@@ -20,7 +7,7 @@ const {
     Equals,
     In,
     suValidate
-} = require("express-sultana-validator");
+} = require("../index");
 
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
@@ -57,5 +44,3 @@ app.post(
 );
 
 app.listen(3000);
-
-```
